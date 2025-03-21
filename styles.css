@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin:5px auto;
+    background: rgb(177, 116, 234);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/worldmap.png);
+    background-size: cover;
+    width: 420px;
+    height: 150px;
+    margin: 0%;
+    border-radius: 5px;
+
+}
+
+.header img {
+    display: block;
+    width: 90px;
+    margin: 20px auto;
+    
+}
+
+.header h1 {
+    font-size: 30px;
+    margin: 5px 0;
+    color: rgb(22, 219, 22);
+    padding-top: 20px;
+}
+
+.header p {
+    font-size: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.translator {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+textarea {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.language-options {
+    display: inline-block;
+    margin: 5px;
+    font-size: 10px;
+    img{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.output {
+    margin-top: 20px;
+    font-weight: bold;
+}

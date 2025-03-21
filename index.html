@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollyGlot Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <img src="assets/parrot.png" alt="PollyGlot Logo">
+            </div>  
+            <div>
+                <h1>PollyGlot</h1>
+                <p>Perfect Translation Every Time</p>
+            </div>
+        </div>
+        <div class="translator">
+            <label for="text">Text to translate 👇</label>
+            <textarea id="text" placeholder="Enter text here..."></textarea>
+
+            <label for="language">Select language 👇</label>
+            <div class="language-options">
+                <label>
+                    <input type="radio" name="language" value="French" checked>
+                    <img src="assets/fr-flag.png" alt="French Flag" class="flag"> French
+                </label>
+                <label>
+                    <input type="radio" name="language" value="Spanish">
+                    <img src="assets/sp-flag.png" alt="Spanish Flag" class="flag"> Spanish
+                </label>
+                <label>
+                    <input type="radio" name="language" value="Japanese">
+                    <img src="assets/jpn-flag.png" alt="Japanese Flag" class="flag"> Japanese
+                </label>
+                <label>
+                    <input type="radio" name="language" value="Mandarin">
+                    <img src="assets/ch-flag.png" alt="Chinese Flag" class="flag"> Mandarin
+                </label>
+                <label>
+                    <input type="radio" name="language" value="German">
+                    <img src="assets/ge-flag.png" alt="German Flag" class="flag"> German
+                </label>
+            </div>
+
+            <button onclick="translateText()">Translate</button>
+            <div class="output" id="output"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
